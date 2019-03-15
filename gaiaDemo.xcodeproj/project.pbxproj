@@ -30,9 +30,7 @@
 
 /* Begin PBXFileReference section */
 		358EC914DD038AF702B97C64 /* Pods_BLE_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLE_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		392C4FD7FD81FBC9C2EF58CA /* Pods-BLE_Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLE_Demo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BLE_Demo/Pods-BLE_Demo.debug.xcconfig"; sourceTree = "<group>"; };
-		4B736AE621D2B3E8B0AC47F8 /* Pods-BLE_Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BLE_Demo.release.xcconfig"; path = "Pods/Target Support Files/Pods-BLE_Demo/Pods-BLE_Demo.release.xcconfig"; sourceTree = "<group>"; };
-		7B4FF40C1DF5912E008E1256 /* BLE_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BLE_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B4FF40C1DF5912E008E1256 /* gaiaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gaiaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B4FF40F1DF5912E008E1256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B4FF4111DF5912E008E1256 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7B4FF4141DF5912E008E1256 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -74,14 +72,13 @@
 				7B4FF40E1DF5912E008E1256 /* BLE_Demo */,
 				7B4FF40D1DF5912E008E1256 /* Products */,
 				7B4FF4451DF68E73008E1256 /* Frameworks */,
-				8EFD511311C6778E1077FEF5 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		7B4FF40D1DF5912E008E1256 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B4FF40C1DF5912E008E1256 /* BLE_Demo.app */,
+				7B4FF40C1DF5912E008E1256 /* gaiaDemo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,21 +134,12 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		8EFD511311C6778E1077FEF5 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				392C4FD7FD81FBC9C2EF58CA /* Pods-BLE_Demo.debug.xcconfig */,
-				4B736AE621D2B3E8B0AC47F8 /* Pods-BLE_Demo.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B4FF40B1DF5912E008E1256 /* BLE_Demo */ = {
+		7B4FF40B1DF5912E008E1256 /* gaiaDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B4FF41E1DF5912E008E1256 /* Build configuration list for PBXNativeTarget "BLE_Demo" */;
+			buildConfigurationList = 7B4FF41E1DF5912E008E1256 /* Build configuration list for PBXNativeTarget "gaiaDemo" */;
 			buildPhases = (
 				7B4FF4081DF5912E008E1256 /* Sources */,
 				7B4FF4091DF5912E008E1256 /* Frameworks */,
@@ -161,9 +149,9 @@
 			);
 			dependencies = (
 			);
-			name = BLE_Demo;
+			name = gaiaDemo;
 			productName = BLE_Demo;
-			productReference = 7B4FF40C1DF5912E008E1256 /* BLE_Demo.app */;
+			productReference = 7B4FF40C1DF5912E008E1256 /* gaiaDemo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -178,11 +166,12 @@
 				TargetAttributes = {
 					7B4FF40B1DF5912E008E1256 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = HVQJMXZU28;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 7B4FF4071DF5912E008E1256 /* Build configuration list for PBXProject "BLE_Demo" */;
+			buildConfigurationList = 7B4FF4071DF5912E008E1256 /* Build configuration list for PBXProject "gaiaDemo" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -195,7 +184,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B4FF40B1DF5912E008E1256 /* BLE_Demo */,
+				7B4FF40B1DF5912E008E1256 /* gaiaDemo */,
 			);
 		};
 /* End PBXProject section */
@@ -350,14 +339,13 @@
 		};
 		7B4FF41F1DF5912E008E1256 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 392C4FD7FD81FBC9C2EF58CA /* Pods-BLE_Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = HVQJMXZU28;
 				INFOPLIST_FILE = BLE_Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.BLE-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = Brent.Chase.gaiaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -365,14 +353,13 @@
 		};
 		7B4FF4201DF5912E008E1256 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4B736AE621D2B3E8B0AC47F8 /* Pods-BLE_Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = HVQJMXZU28;
 				INFOPLIST_FILE = BLE_Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.BLE-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = Brent.Chase.gaiaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -381,7 +368,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B4FF4071DF5912E008E1256 /* Build configuration list for PBXProject "BLE_Demo" */ = {
+		7B4FF4071DF5912E008E1256 /* Build configuration list for PBXProject "gaiaDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B4FF41C1DF5912E008E1256 /* Debug */,
@@ -390,7 +377,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B4FF41E1DF5912E008E1256 /* Build configuration list for PBXNativeTarget "BLE_Demo" */ = {
+		7B4FF41E1DF5912E008E1256 /* Build configuration list for PBXNativeTarget "gaiaDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7B4FF41F1DF5912E008E1256 /* Debug */,

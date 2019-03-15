@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "7B4FF40B1DF5912E008E1256"
-               BuildableName = "BLE_Demo.app"
-               BlueprintName = "BLE_Demo"
-               ReferencedContainer = "container:BLE_Demo.xcodeproj">
+               BuildableName = "gaiaDemo.app"
+               BlueprintName = "gaiaDemo"
+               ReferencedContainer = "container:gaiaDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7B4FF40B1DF5912E008E1256"
-            BuildableName = "BLE_Demo.app"
-            BlueprintName = "BLE_Demo"
-            ReferencedContainer = "container:BLE_Demo.xcodeproj">
+            BuildableName = "gaiaDemo.app"
+            BlueprintName = "gaiaDemo"
+            ReferencedContainer = "container:gaiaDemo.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -56,9 +56,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7B4FF40B1DF5912E008E1256"
-            BuildableName = "BLE_Demo.app"
-            BlueprintName = "BLE_Demo"
-            ReferencedContainer = "container:BLE_Demo.xcodeproj">
+            BuildableName = "gaiaDemo.app"
+            BlueprintName = "gaiaDemo"
+            ReferencedContainer = "container:gaiaDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -75,9 +75,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "7B4FF40B1DF5912E008E1256"
-            BuildableName = "BLE_Demo.app"
-            BlueprintName = "BLE_Demo"
-            ReferencedContainer = "container:BLE_Demo.xcodeproj">
+            BuildableName = "gaiaDemo.app"
+            BlueprintName = "gaiaDemo"
+            ReferencedContainer = "container:gaiaDemo.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
