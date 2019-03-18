@@ -26,9 +26,14 @@
 		7B4FF4471DF68E74008E1256 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4FF4461DF68E74008E1256 /* CoreBluetooth.framework */; };
 		7B4FF4491DF692AD008E1256 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4FF4481DF692AD008E1256 /* AVFoundation.framework */; };
 		7BFE78231DF838A100B01A2D /* BLEDeviceProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFE78221DF838A100B01A2D /* BLEDeviceProperties.swift */; };
+		9C550532760E05EB07B2BDAB /* Pods_gaiaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B223D23710202FFC13DAB9 /* Pods_gaiaDemo.framework */; };
+		CEBE9EF22240012F0073D1AC /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE9EF12240012F0073D1AC /* SplashScreenViewController.swift */; };
+		CEBE9EF4224003DF0073D1AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE9EF3224003DF0073D1AC /* LoginViewController.swift */; };
+		CEBE9EF6224005F40073D1AC /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = CEBE9EF5224005F40073D1AC /* GoogleService-Info (1).plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		204A7AB408AE21B55720B921 /* Pods-gaiaDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gaiaDemo.release.xcconfig"; path = "Target Support Files/Pods-gaiaDemo/Pods-gaiaDemo.release.xcconfig"; sourceTree = "<group>"; };
 		358EC914DD038AF702B97C64 /* Pods_BLE_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BLE_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B4FF40C1DF5912E008E1256 /* gaiaDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = gaiaDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B4FF40F1DF5912E008E1256 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +56,11 @@
 		7B4FF4461DF68E74008E1256 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		7B4FF4481DF692AD008E1256 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7BFE78221DF838A100B01A2D /* BLEDeviceProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEDeviceProperties.swift; sourceTree = "<group>"; };
+		CEBE9EF12240012F0073D1AC /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		CEBE9EF3224003DF0073D1AC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		CEBE9EF5224005F40073D1AC /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		E6B223D23710202FFC13DAB9 /* Pods_gaiaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gaiaDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBD3827C0FF766C4F36B5F83 /* Pods-gaiaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gaiaDemo.debug.xcconfig"; path = "Target Support Files/Pods-gaiaDemo/Pods-gaiaDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +70,7 @@
 			files = (
 				7B4FF4491DF692AD008E1256 /* AVFoundation.framework in Frameworks */,
 				7B4FF4471DF68E74008E1256 /* CoreBluetooth.framework in Frameworks */,
+				9C550532760E05EB07B2BDAB /* Pods_gaiaDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +83,7 @@
 				7B4FF40E1DF5912E008E1256 /* BLE_Demo */,
 				7B4FF40D1DF5912E008E1256 /* Products */,
 				7B4FF4451DF68E73008E1256 /* Frameworks */,
+				F16A300E88E214CCEE43A509 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,6 +111,9 @@
 				7B4FF4221DF591DB008E1256 /* DeviceTableViewCell.xib */,
 				7B4FF4311DF68758008E1256 /* ServiceTableViewCell.swift */,
 				7B4FF4321DF68758008E1256 /* ServiceTableViewCell.xib */,
+				CEBE9EF12240012F0073D1AC /* SplashScreenViewController.swift */,
+				CEBE9EF3224003DF0073D1AC /* LoginViewController.swift */,
+				CEBE9EF5224005F40073D1AC /* GoogleService-Info (1).plist */,
 			);
 			path = BLE_Demo;
 			sourceTree = "<group>";
@@ -130,8 +145,19 @@
 				7B4FF4481DF692AD008E1256 /* AVFoundation.framework */,
 				7B4FF4461DF68E74008E1256 /* CoreBluetooth.framework */,
 				358EC914DD038AF702B97C64 /* Pods_BLE_Demo.framework */,
+				E6B223D23710202FFC13DAB9 /* Pods_gaiaDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F16A300E88E214CCEE43A509 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBD3827C0FF766C4F36B5F83 /* Pods-gaiaDemo.debug.xcconfig */,
+				204A7AB408AE21B55720B921 /* Pods-gaiaDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,9 +167,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7B4FF41E1DF5912E008E1256 /* Build configuration list for PBXNativeTarget "gaiaDemo" */;
 			buildPhases = (
+				384DD4589F1062235727519E /* [CP] Check Pods Manifest.lock */,
 				7B4FF4081DF5912E008E1256 /* Sources */,
 				7B4FF4091DF5912E008E1256 /* Frameworks */,
 				7B4FF40A1DF5912E008E1256 /* Resources */,
+				FEB31B804EBEC6758BA951A0 /* [CP] Embed Pods Frameworks */,
+				899DD7E8E43B1C675CDBB185 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,6 +224,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B4FF41A1DF5912E008E1256 /* LaunchScreen.storyboard in Resources */,
+				CEBE9EF6224005F40073D1AC /* GoogleService-Info (1).plist in Resources */,
 				7B4FF4171DF5912E008E1256 /* Assets.xcassets in Resources */,
 				7B4FF4151DF5912E008E1256 /* Main.storyboard in Resources */,
 				7B4FF4241DF591DB008E1256 /* DeviceTableViewCell.xib in Resources */,
@@ -204,14 +234,89 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		384DD4589F1062235727519E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-gaiaDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		899DD7E8E43B1C675CDBB185 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gaiaDemo/Pods-gaiaDemo-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/FirebaseUI/FirebaseAuthUI.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/FirebaseAuthUI.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gaiaDemo/Pods-gaiaDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FEB31B804EBEC6758BA951A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-gaiaDemo/Pods-gaiaDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-gaiaDemo/Pods-gaiaDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7B4FF4081DF5912E008E1256 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEBE9EF4224003DF0073D1AC /* LoginViewController.swift in Sources */,
 				7B4FF4421DF68C74008E1256 /* BLEDeviceScan.swift in Sources */,
 				7BFE78231DF838A100B01A2D /* BLEDeviceProperties.swift in Sources */,
 				7B4FF4401DF68C74008E1256 /* BLEDeviceDiscoverServices.swift in Sources */,
+				CEBE9EF22240012F0073D1AC /* SplashScreenViewController.swift in Sources */,
 				7B4FF4121DF5912E008E1256 /* ViewController.swift in Sources */,
 				7B4FF4331DF68758008E1256 /* ServiceTableViewCell.swift in Sources */,
 				7B4FF4431DF68C74008E1256 /* BLEManager.swift in Sources */,
@@ -339,6 +444,7 @@
 		};
 		7B4FF41F1DF5912E008E1256 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBD3827C0FF766C4F36B5F83 /* Pods-gaiaDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HVQJMXZU28;
@@ -353,6 +459,7 @@
 		};
 		7B4FF4201DF5912E008E1256 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 204A7AB408AE21B55720B921 /* Pods-gaiaDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = HVQJMXZU28;
