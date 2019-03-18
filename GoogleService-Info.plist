@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>346993204102-1f9ush01svm3cps7sovjibt8f3qqp52h.apps.googleusercontent.com</string>
+	<string>297881819712-956e6r2dr2dc27o5a9ds9t229afqptcn.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.346993204102-1f9ush01svm3cps7sovjibt8f3qqp52h</string>
+	<string>com.googleusercontent.apps.297881819712-956e6r2dr2dc27o5a9ds9t229afqptcn</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAu9kMrsEQHPythkNolito81ihyscManho</string>
+	<string>AIzaSyD6_G5wXseQcC0ZjQhrF8kMQ_EWO-DoV2w</string>
 	<key>GCM_SENDER_ID</key>
-	<string>346993204102</string>
+	<string>297881819712</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>Brent.Chase.gaiaDemo</string>
+	<string>Chase.Brent.gaiaTest</string>
 	<key>PROJECT_ID</key>
-	<string>gaiademo</string>
+	<string>gaia-demo</string>
 	<key>STORAGE_BUCKET</key>
-	<string>gaiademo.appspot.com</string>
+	<string>gaia-demo.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true></true>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:346993204102:ios:b45065dde01be1a9</string>
+	<string>1:297881819712:ios:3a96f74149c558ab</string>
 	<key>DATABASE_URL</key>
-	<string>https://gaiademo.firebaseio.com</string>
+	<string>https://gaia-demo.firebaseio.com</string>
 </dict>
 </plist>
