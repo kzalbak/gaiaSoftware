@@ -18,7 +18,8 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    @IBAction func goLogin(_ sender: Any) {
+   
+    @IBAction func loginClicked(_ sender: Any) {
         let authUI = FUIAuth.defaultAuthUI()
         
         guard authUI != nil else{
@@ -30,12 +31,11 @@ class LoginViewController: UIViewController {
         let authViewController = authUI!.authViewController()
         
         present(authViewController, animated: true, completion: nil)
-        
-        
     }
     
+    
     /*
-    // MARK: - Navigation
+     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
