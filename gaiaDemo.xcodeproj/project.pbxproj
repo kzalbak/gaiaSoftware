@@ -29,7 +29,7 @@
 		9C550532760E05EB07B2BDAB /* Pods_gaiaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6B223D23710202FFC13DAB9 /* Pods_gaiaDemo.framework */; };
 		CEBE9EF22240012F0073D1AC /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE9EF12240012F0073D1AC /* SplashScreenViewController.swift */; };
 		CEBE9EF4224003DF0073D1AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE9EF3224003DF0073D1AC /* LoginViewController.swift */; };
-		CEBE9EF6224005F40073D1AC /* GoogleService-Info (1).plist in Resources */ = {isa = PBXBuildFile; fileRef = CEBE9EF5224005F40073D1AC /* GoogleService-Info (1).plist */; };
+		CEBE9EFC22405AB70073D1AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEBE9EFB22405AB70073D1AC /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,7 +58,8 @@
 		7BFE78221DF838A100B01A2D /* BLEDeviceProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEDeviceProperties.swift; sourceTree = "<group>"; };
 		CEBE9EF12240012F0073D1AC /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		CEBE9EF3224003DF0073D1AC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		CEBE9EF5224005F40073D1AC /* GoogleService-Info (1).plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info (1).plist"; sourceTree = "<group>"; };
+		CEBE9EF922405A4E0073D1AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CEBE9EFB22405AB70073D1AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E6B223D23710202FFC13DAB9 /* Pods_gaiaDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_gaiaDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EBD3827C0FF766C4F36B5F83 /* Pods-gaiaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gaiaDemo.debug.xcconfig"; path = "Target Support Files/Pods-gaiaDemo/Pods-gaiaDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -80,6 +81,7 @@
 		7B4FF4031DF5912E008E1256 = {
 			isa = PBXGroup;
 			children = (
+				CEBE9EFB22405AB70073D1AC /* GoogleService-Info.plist */,
 				7B4FF40E1DF5912E008E1256 /* BLE_Demo */,
 				7B4FF40D1DF5912E008E1256 /* Products */,
 				7B4FF4451DF68E73008E1256 /* Frameworks */,
@@ -113,7 +115,6 @@
 				7B4FF4321DF68758008E1256 /* ServiceTableViewCell.xib */,
 				CEBE9EF12240012F0073D1AC /* SplashScreenViewController.swift */,
 				CEBE9EF3224003DF0073D1AC /* LoginViewController.swift */,
-				CEBE9EF5224005F40073D1AC /* GoogleService-Info (1).plist */,
 			);
 			path = BLE_Demo;
 			sourceTree = "<group>";
@@ -153,10 +154,10 @@
 		F16A300E88E214CCEE43A509 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
+				CEBE9EF922405A4E0073D1AC /* GoogleService-Info.plist */,
 				EBD3827C0FF766C4F36B5F83 /* Pods-gaiaDemo.debug.xcconfig */,
 				204A7AB408AE21B55720B921 /* Pods-gaiaDemo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -224,11 +225,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B4FF41A1DF5912E008E1256 /* LaunchScreen.storyboard in Resources */,
-				CEBE9EF6224005F40073D1AC /* GoogleService-Info (1).plist in Resources */,
 				7B4FF4171DF5912E008E1256 /* Assets.xcassets in Resources */,
 				7B4FF4151DF5912E008E1256 /* Main.storyboard in Resources */,
 				7B4FF4241DF591DB008E1256 /* DeviceTableViewCell.xib in Resources */,
 				7B4FF4341DF68758008E1256 /* ServiceTableViewCell.xib in Resources */,
+				CEBE9EFC22405AB70073D1AC /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
