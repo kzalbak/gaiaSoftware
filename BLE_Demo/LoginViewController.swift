@@ -2,13 +2,13 @@
 //  LoginViewController.swift
 //  gaiaDemo
 //
-//  Created by User on 3/18/19.
+//  Created by User on 3/19/19.
 //  Copyright © 2019 IQVIS. All rights reserved.
 //
 
 import UIKit
-import FirebaseAuth
 import FirebaseUI
+import FirebaseAuth
 
 class LoginViewController: UIViewController {
 
@@ -18,20 +18,22 @@ class LoginViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-    
-    @IBAction func loginTapped(_ sender: Any) {
+    @IBAction func goLogin(_ sender: Any) {
         let authUI = FUIAuth.defaultAuthUI()
+        
         guard authUI != nil else{
             return
         }
         
         authUI?.delegate = self
+        
         let authViewController = authUI!.authViewController()
         
         present(authViewController, animated: true, completion: nil)
+        
+        
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -41,19 +43,17 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
- 
 
 }
 
 extension LoginViewController: FUIAuthDelegate{
-    func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?){
+    func authUI(_ authUI: FUIAuth, didSignInWith authDataResult: AuthDataResult?, error: Error?) {
         
-        if error != nil{
+        guard error == nil else{
             return
         }
         
         performSegue(withIdentifier: "goHome", sender: self)
     }
+    
 }
-
-

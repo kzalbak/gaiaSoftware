@@ -135,7 +135,7 @@
         <!--Login View Controller-->
         <scene sceneID="TOC-kL-msY">
             <objects>
-                <viewController id="AV5-KG-2MX" customClass="LoginViewController" customModule="gaiaDemo" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="loginScreen" id="AV5-KG-2MX" customClass="LoginViewController" customModule="gaiaDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="XsL-u6-Q9C"/>
                         <viewControllerLayoutGuide type="bottom" id="KFd-kg-gTI"/>
@@ -149,6 +149,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login"/>
                                 <connections>
+                                    <action selector="goLogin:" destination="AV5-KG-2MX" eventType="touchUpInside" id="5Vz-az-Xis"/>
                                     <action selector="loginTapped:" destination="AV5-KG-2MX" eventType="touchUpInside" id="aKl-m6-odu"/>
                                 </connections>
                             </button>

@@ -6,7 +6,9 @@ target 'gaiaDemo' do
   use_frameworks!
 
   # Pods for gaiaDemo
-  pod 'Firebase/Core'
-  pod 'FirebaseUI/Auth'
+	pod 'Firebase/Core'
+	pod 'FirebaseUI/Auth'
+
+
 
 end
