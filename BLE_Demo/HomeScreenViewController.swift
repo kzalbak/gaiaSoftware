@@ -1,14 +1,14 @@
 //
-//  SplashScreenViewController.swift
+//  HomeScreenViewController.swift
 //  gaiaDemo
 //
-//  Created by User on 3/18/19.
+//  Created by User on 3/20/19.
 //  Copyright © 2019 IQVIS. All rights reserved.
 //
 
 import UIKit
 
-class SplashScreenViewController: UIViewController {
+class HomeScreenViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,19 +17,11 @@ class SplashScreenViewController: UIViewController {
     }
     
     
-    @IBAction func moveBlue(_ sender: Any) {
+    @IBAction func goBack(_ sender: Any) {
         let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
         
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "navScreen") 
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "splashScreen")
         self.present(nextViewController, animated:true, completion:nil)
-    }
-    
-    @IBAction func goHomeScreen(_ sender: Any) {
-        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
-        
-        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "homeScreen")
-        self.present(nextViewController, animated: true, completion: nil)
-        
     }
     
 

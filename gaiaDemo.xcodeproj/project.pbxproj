@@ -29,6 +29,7 @@
 		BEF237A83753978AD743E7D1 /* Pods_gaiaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03108480D8CA8A5841323BD3 /* Pods_gaiaDemo.framework */; };
 		CE0D4DC42242ACF3000C914A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D4DC32242ACF3000C914A /* SignUpViewController.swift */; };
 		CE0D4DC62242C205000C914A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D4DC52242C205000C914A /* SignInViewController.swift */; };
+		CE0D4DC82242DFDF000C914A /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D4DC72242DFDF000C914A /* HomeScreenViewController.swift */; };
 		CEBE9EF22240012F0073D1AC /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE9EF12240012F0073D1AC /* SplashScreenViewController.swift */; };
 		CEBE9F0222417D980073D1AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE9F0122417D980073D1AC /* LoginViewController.swift */; };
 		CEBE9F0822417F050073D1AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEBE9F0722417F050073D1AC /* GoogleService-Info.plist */; };
@@ -61,6 +62,7 @@
 		9C436BB3E5996CB32F1AA109 /* Pods-gaiaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gaiaDemo.debug.xcconfig"; path = "Target Support Files/Pods-gaiaDemo/Pods-gaiaDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		CE0D4DC32242ACF3000C914A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CE0D4DC52242C205000C914A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		CE0D4DC72242DFDF000C914A /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
 		CEBE9EF12240012F0073D1AC /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		CEBE9F0122417D980073D1AC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CEBE9F0722417F050073D1AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 				CEBE9F0722417F050073D1AC /* GoogleService-Info.plist */,
 				CE0D4DC32242ACF3000C914A /* SignUpViewController.swift */,
 				CE0D4DC52242C205000C914A /* SignInViewController.swift */,
+				CE0D4DC72242DFDF000C914A /* HomeScreenViewController.swift */,
 			);
 			path = BLE_Demo;
 			sourceTree = "<group>";
@@ -317,6 +320,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE0D4DC82242DFDF000C914A /* HomeScreenViewController.swift in Sources */,
 				CEBE9F0222417D980073D1AC /* LoginViewController.swift in Sources */,
 				7B4FF4421DF68C74008E1256 /* BLEDeviceScan.swift in Sources */,
 				7BFE78231DF838A100B01A2D /* BLEDeviceProperties.swift in Sources */,
