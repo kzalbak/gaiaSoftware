@@ -19,18 +19,17 @@ class LoginViewController: UIViewController {
     }
     
    
+    
+    @IBAction func signUpClicked(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "signUpScreen")
+        self.present(nextViewController, animated:true, completion:nil)
+    }
+    
+    
     @IBAction func loginClicked(_ sender: Any) {
-        let authUI = FUIAuth.defaultAuthUI()
-        
-        guard authUI != nil else{
-            return
-        }
-        
-        authUI?.delegate = self
-        
-        let authViewController = authUI!.authViewController()
-        
-        present(authViewController, animated: true, completion: nil)
+        performSegue(withIdentifier: "goLogin", sender: self)
     }
     
     

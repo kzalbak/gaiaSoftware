@@ -8,7 +8,7 @@ target 'gaiaDemo' do
   # Pods for gaiaDemo
 	pod 'Firebase/Core'
 	pod 'FirebaseUI/Auth'
-
-
+	pod 'Firebase/Auth'
+	pod 'Firebase/Database'
 
 end

@@ -27,6 +27,8 @@
 		7B4FF4491DF692AD008E1256 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B4FF4481DF692AD008E1256 /* AVFoundation.framework */; };
 		7BFE78231DF838A100B01A2D /* BLEDeviceProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BFE78221DF838A100B01A2D /* BLEDeviceProperties.swift */; };
 		BEF237A83753978AD743E7D1 /* Pods_gaiaDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03108480D8CA8A5841323BD3 /* Pods_gaiaDemo.framework */; };
+		CE0D4DC22242A802000C914A /* LoginPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D4DC12242A802000C914A /* LoginPageViewController.swift */; };
+		CE0D4DC42242ACF3000C914A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D4DC32242ACF3000C914A /* SignUpViewController.swift */; };
 		CEBE9EF22240012F0073D1AC /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE9EF12240012F0073D1AC /* SplashScreenViewController.swift */; };
 		CEBE9F0222417D980073D1AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE9F0122417D980073D1AC /* LoginViewController.swift */; };
 		CEBE9F0822417F050073D1AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEBE9F0722417F050073D1AC /* GoogleService-Info.plist */; };
@@ -57,6 +59,8 @@
 		7B4FF4481DF692AD008E1256 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		7BFE78221DF838A100B01A2D /* BLEDeviceProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BLEDeviceProperties.swift; sourceTree = "<group>"; };
 		9C436BB3E5996CB32F1AA109 /* Pods-gaiaDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-gaiaDemo.debug.xcconfig"; path = "Target Support Files/Pods-gaiaDemo/Pods-gaiaDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CE0D4DC12242A802000C914A /* LoginPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPageViewController.swift; sourceTree = "<group>"; };
+		CE0D4DC32242ACF3000C914A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CEBE9EF12240012F0073D1AC /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		CEBE9F0122417D980073D1AC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CEBE9F0722417F050073D1AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -113,6 +117,8 @@
 				CEBE9EF12240012F0073D1AC /* SplashScreenViewController.swift */,
 				CEBE9F0122417D980073D1AC /* LoginViewController.swift */,
 				CEBE9F0722417F050073D1AC /* GoogleService-Info.plist */,
+				CE0D4DC12242A802000C914A /* LoginPageViewController.swift */,
+				CE0D4DC32242ACF3000C914A /* SignUpViewController.swift */,
 			);
 			path = BLE_Demo;
 			sourceTree = "<group>";
@@ -265,6 +271,7 @@
 				"${PODS_ROOT}/Target Support Files/Pods-gaiaDemo/Pods-gaiaDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -273,6 +280,7 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -319,9 +327,11 @@
 				7B4FF4431DF68C74008E1256 /* BLEManager.swift in Sources */,
 				7B4FF4411DF68C74008E1256 /* BLEDeviceRSSI.swift in Sources */,
 				7B4FF4231DF591DB008E1256 /* DeviceTableViewCell.swift in Sources */,
+				CE0D4DC42242ACF3000C914A /* SignUpViewController.swift in Sources */,
 				7B4FF4261DF595FD008E1256 /* ServiceViewController.swift in Sources */,
 				7B4FF4101DF5912E008E1256 /* AppDelegate.swift in Sources */,
 				7B4FF43F1DF68C74008E1256 /* BLEDeviceConnection.swift in Sources */,
+				CE0D4DC22242A802000C914A /* LoginPageViewController.swift in Sources */,
 				7B4FF4281DF5961A008E1256 /* CharacteristicsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
