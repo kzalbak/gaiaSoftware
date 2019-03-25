@@ -43,12 +43,14 @@ class HomeScreenViewController: UIViewController {
     
     @IBAction func stopTimer(_ sender: Any) {
         timerA.invalidate()
-        //timerA.invalidate()
+        timerA.invalidate()
+        /*
         ActTime = 0
         TimeH = 0
         TimeM = 0
         TimeS = 0
         Timelbl.text = String(format: "%02d",TimeH) + ":" + String(format: "%02d", TimeM) + ":" + String(format: "%02d", TimeS)
+        */
     }
     
     func ActStart(){

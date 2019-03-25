@@ -419,7 +419,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="(hh_mm_ss)" translatesAutoresizingMaskIntoConstraints="NO" id="Yqj-H8-yXM">
-                                <rect key="frame" x="252" y="62" width="52" height="48"/>
+                                <rect key="frame" x="268" y="62" width="52" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EDA" translatesAutoresizingMaskIntoConstraints="NO" id="UL6-ex-GaG">
@@ -434,7 +434,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="(EDA)" translatesAutoresizingMaskIntoConstraints="NO" id="pLb-DL-K8Z">
-                                <rect key="frame" x="247" y="118" width="57" height="48"/>
+                                <rect key="frame" x="263" y="118" width="57" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="EMG" translatesAutoresizingMaskIntoConstraints="NO" id="464-z7-6VU">
@@ -449,7 +449,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="(EMG)" translatesAutoresizingMaskIntoConstraints="NO" id="Jht-js-t1z">
-                                <rect key="frame" x="247" y="174" width="57" height="48"/>
+                                <rect key="frame" x="263" y="174" width="57" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HR" translatesAutoresizingMaskIntoConstraints="NO" id="u1y-f8-14G">
@@ -464,7 +464,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="(bpm)" translatesAutoresizingMaskIntoConstraints="NO" id="gDq-bk-DZ6">
-                                <rect key="frame" x="247" y="230" width="57" height="48"/>
+                                <rect key="frame" x="263" y="230" width="57" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="HRV" translatesAutoresizingMaskIntoConstraints="NO" id="5lT-o3-Dcl">
@@ -479,7 +479,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="(mV)" translatesAutoresizingMaskIntoConstraints="NO" id="UL2-Sy-SqZ">
-                                <rect key="frame" x="247" y="286" width="57" height="48"/>
+                                <rect key="frame" x="263" y="286" width="57" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="RR" translatesAutoresizingMaskIntoConstraints="NO" id="aOy-H6-fvG">
@@ -494,7 +494,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="(RR)" translatesAutoresizingMaskIntoConstraints="NO" id="2Nn-a1-FAk">
-                                <rect key="frame" x="247" y="342" width="57" height="48"/>
+                                <rect key="frame" x="263" y="342" width="57" height="48"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="XYZ" translatesAutoresizingMaskIntoConstraints="NO" id="lpX-Es-sTv">
@@ -508,10 +508,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="(XYZ)" translatesAutoresizingMaskIntoConstraints="NO" id="pDa-uT-yWl">
-                                <rect key="frame" x="247" y="398" width="57" height="48"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="presented by gaia Wearables" translatesAutoresizingMaskIntoConstraints="NO" id="zsd-W5-1uC">
                                 <rect key="frame" x="16" y="514" width="288" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -524,14 +520,6 @@
                                     <action selector="goBack:" destination="uvg-yf-OZ2" eventType="touchUpInside" id="ftI-Y6-8NR"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8V-x9-Nmz">
-                                <rect key="frame" x="205" y="476" width="32" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Stop"/>
-                                <connections>
-                                    <action selector="stopTimer:" destination="uvg-yf-OZ2" eventType="touchUpInside" id="Pi0-3E-Aig"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="puQ-yC-pcn">
                                 <rect key="frame" x="76" y="476" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -540,6 +528,18 @@
                                     <action selector="startTimer:" destination="uvg-yf-OZ2" eventType="touchUpInside" id="Gi2-xh-iXI"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V8V-x9-Nmz">
+                                <rect key="frame" x="205" y="476" width="32" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Stop"/>
+                                <connections>
+                                    <action selector="stopTimer:" destination="uvg-yf-OZ2" eventType="touchUpInside" id="Pi0-3E-Aig"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="(XYZ)" translatesAutoresizingMaskIntoConstraints="NO" id="pDa-uT-yWl">
+                                <rect key="frame" x="263" y="398" width="57" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
