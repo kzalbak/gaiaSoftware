@@ -24,7 +24,7 @@ class SignInViewController: UIViewController {
     }
     
     
-    
+    //This needs to be fixed
     @IBAction func enterClicked(_ sender: Any) {
         Auth.auth().signIn(withEmail: emailTextField.text!, password: passwordTextField.text!)
         if Auth.auth().isSignIn(withEmailLink: emailTextField.text!) == true{

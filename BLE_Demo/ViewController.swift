@@ -81,6 +81,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let pairedPeripheralStruct = deviceArray?.object(at: indexPath.row) as? DisplayPeripheral
         let selectedperipheral = (pairedPeripheralStruct?.peripheral!)! as CBPeripheral
+        //THIS IS FOR TESTING
+        print(selectedperipheral.name)
         
         //Push to ServiceViewController for only paired devices
         if selectedperipheral.state.rawValue == 2 { // 2
