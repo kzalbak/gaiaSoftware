@@ -82,7 +82,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let pairedPeripheralStruct = deviceArray?.object(at: indexPath.row) as? DisplayPeripheral
         let selectedperipheral = (pairedPeripheralStruct?.peripheral!)! as CBPeripheral
         //THIS IS FOR TESTING
-       print(selectedperipheral.name)
+       //print(selectedperipheral.name)
         
         //Push to ServiceViewController for only paired devices
         if selectedperipheral.state.rawValue == 2 { // 2
@@ -133,7 +133,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.connectedPeripheral = connectedPeripheral
     }
     //Get current connected perpheral
+    //GET THE NAME AND SEND IT TO DIFFERENT CLASS
     func getCurrentConnectedPeripheral() -> CBPeripheral? {
+        print(self.connectedPeripheral?.name)
         return self.connectedPeripheral
     }
     func setServiceNavigation() {

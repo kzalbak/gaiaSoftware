@@ -39,7 +39,6 @@ class SignUpViewController: UIViewController {
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "loginScreen")
         self.present(nextViewController, animated:true, completion:nil)
     }
-    
     /*
     // MARK: - Navigation
 
