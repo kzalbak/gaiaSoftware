@@ -82,7 +82,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let pairedPeripheralStruct = deviceArray?.object(at: indexPath.row) as? DisplayPeripheral
         let selectedperipheral = (pairedPeripheralStruct?.peripheral!)! as CBPeripheral
         //THIS IS FOR TESTING
-        print(selectedperipheral.name)
+       print(selectedperipheral.name)
         
         //Push to ServiceViewController for only paired devices
         if selectedperipheral.state.rawValue == 2 { // 2
@@ -162,6 +162,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             bleDeviceTV.reloadData()
         }
     }
+    
+    
+    
+    @IBAction func goHome(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "splashScreen")
+        self.present(nextViewController, animated:true, completion:nil)
+    }
+    
+    
     //Call back for the device bluetooth status
     func postBLEConnectionStatus(status: Int) {
         if status == Int(4) { //OFF 4

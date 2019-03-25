@@ -39,6 +39,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Device List" id="pph-4r-jYw">
+                        <barButtonItem key="leftBarButtonItem" title="Go Home" style="plain" id="KF4-dE-brA">
+                            <connections>
+                                <action selector="goHome:" destination="BYZ-38-t0r" id="ZI8-Xc-gCZ"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" style="plain" id="5b2-hc-dSD">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Pm7-sZ-IzZ">
                                 <rect key="frame" x="233" y="7" width="71" height="30"/>
