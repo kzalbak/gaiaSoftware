@@ -10,5 +10,7 @@ target 'gaiaDemo' do
 	pod 'FirebaseUI/Auth'
 	pod 'Firebase/Auth'
 	pod 'Firebase/Database'
+	pod 'UICircularProgressRing'
+	pod 'JWGCircleCounter'
 
 end

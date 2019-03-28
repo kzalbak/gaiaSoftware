@@ -31,7 +31,7 @@ class SplashScreenViewController: UIViewController {
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "homeScreen")
         self.present(nextViewController, animated: true, completion: nil)
         print(ViewController().getCurrentConnectedPeripheral()?.name)
-         AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate)) 
+         //AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate)) 
     }
     
 

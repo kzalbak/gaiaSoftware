@@ -9,11 +9,20 @@
 import UIKit
 import CoreBluetooth
 import Foundation
+import AudioToolbox
 
 class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPeripheralDelegate {
 
     @IBOutlet weak var Timelbl: UILabel!
     @IBOutlet weak var HeartRatelbl: UILabel!
+    @IBOutlet weak var Meter: UIImageView!
+    @IBOutlet weak var Face: UIImageView!
+    
+    /*
+    JWGCircleCounter *circleCounter = [[JWGCircleCounter alloc] initWithFrame:CGRectMake(0,0,40,40)];
+    ...
+    [your_view addSubview:circleCounter];
+    */
     
     //central manager, receiving data
     var centralManager:CBCentralManager!
@@ -168,6 +177,63 @@ class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPer
         var bpmTemp:Int
         bpmTemp = Int(UInt(bpm!))
         var GSRL: String
+        switch bpmTemp{
+        case 0...58:
+            //lbl.text = ("😁: Doing Yoga?")
+            Meter.image = UIImage(named: "MeterLow")!
+            Face.image = UIImage(named: "f0")!
+            GSRL = "Low"
+            break
+        case 59...67:
+            //lbl.text = ("😄: You're cool")
+            Meter.image = UIImage(named: "MeterLowHigh")!
+            Face.image = UIImage(named: "f1")!
+
+            GSRL = "Low-High"
+            break
+        case 68...74:
+            //lbl.text = ("😃: Relaxed?")
+            Meter.image = UIImage(named: "MeterNormLow")!
+            Face.image = UIImage(named: "f2")!
+
+            GSRL = "Normal"
+            break
+        case 75...77:
+            //lbl.text = ("😊: Be Chill")
+            Meter.image = UIImage(named: "MeterNorm")!
+            Face.image = UIImage(named: "f2")!
+
+            GSRL = "Normal"
+            break
+        case 78...84:
+            //lbl.text = ("🙂: You're Good")
+            Meter.image = UIImage(named: "MeterNormHigh")!
+            Face.image = UIImage(named: "f3")!
+
+            GSRL = "Normal"
+            break
+        case 85...89:
+            //lbl.text = ("🙁: Breath")
+            Meter.image = UIImage(named: "MeterHighLow")!
+            Face.image = UIImage(named: "f4")!
+
+            GSRL = "High"
+            break
+        case let x where x > 90:
+            //lbl.text = ("☹️: Chillout")
+            Meter.image = UIImage(named: "MeterHigh")!
+            Face.image = UIImage(named: "f5")!
+            AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
+            let alert = UIAlertController(title: "Alert", message: "Chill out!", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+            
+            GSRL = "High"
+            break
+        default:
+            GSRL = "N/A"
+        }
+        
         if let actualBpm = bpm{
             print(actualBpm)
             HeartRatelbl.text = ("\(actualBpm)")

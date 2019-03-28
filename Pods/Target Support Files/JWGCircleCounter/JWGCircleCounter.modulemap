@@ -1,0 +1,6 @@
+framework module JWGCircleCounter {
+  umbrella header "JWGCircleCounter-umbrella.h"
+
+  export *
+  module * { export * }
+}

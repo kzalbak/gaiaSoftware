@@ -63,18 +63,22 @@ PODS:
   - GoogleUtilities/UserDefaults (5.5.0):
     - GoogleUtilities/Logger
   - GTMSessionFetcher/Core (1.2.1)
+  - JWGCircleCounter (0.2.2)
   - leveldb-library (1.20)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
   - nanopb/decode (0.3.901)
   - nanopb/encode (0.3.901)
+  - UICircularProgressRing (6.0.2)
 
 DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
   - FirebaseUI/Auth
+  - JWGCircleCounter
+  - UICircularProgressRing
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -89,8 +93,10 @@ SPEC REPOS:
     - GoogleAppMeasurement
     - GoogleUtilities
     - GTMSessionFetcher
+    - JWGCircleCounter
     - leveldb-library
     - nanopb
+    - UICircularProgressRing
 
 SPEC CHECKSUMS:
   Firebase: 02f3281965c075426141a0ce1277e9de6649cab9
@@ -104,9 +110,11 @@ SPEC CHECKSUMS:
   GoogleAppMeasurement: 6cf307834da065863f9faf4c0de0a936d81dd832
   GoogleUtilities: 6481e6318c5fcabaaa8513ef8120f329055d7c10
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
+  JWGCircleCounter: 89e25c3d5e9eb41cf666a795427712bb5e52a1a1
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
+  UICircularProgressRing: 2ef1293241b83d8020ede21a8fe3b3d859525730
 
-PODFILE CHECKSUM: ea39914f260622bf3f6c876a136405f5feaed865
+PODFILE CHECKSUM: 6bc533e5d9ca718985e4160193a7ff5117179550
 
 COCOAPODS: 1.6.1
