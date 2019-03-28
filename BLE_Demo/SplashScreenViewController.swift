@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AudioToolbox
 
 class SplashScreenViewController: UIViewController {
 
@@ -29,7 +30,8 @@ class SplashScreenViewController: UIViewController {
         
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "homeScreen")
         self.present(nextViewController, animated: true, completion: nil)
-        print(ViewController().getCurrentConnectedPeripheral())
+        print(ViewController().getCurrentConnectedPeripheral()?.name)
+         AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate)) 
     }
     
 

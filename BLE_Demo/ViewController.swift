@@ -172,6 +172,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         let nextViewController = storyBoard.instantiateViewController(withIdentifier: "splashScreen")
         self.present(nextViewController, animated:true, completion:nil)
+        
+        
+        
     }
     
     
