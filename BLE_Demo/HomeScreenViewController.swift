@@ -29,6 +29,7 @@ class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPer
     //peripheral manager, sending data
     var connectingPeripheral:CBPeripheral!
     
+    
     /////////Polar Heart Rate////////////
     let HSP3_5_UUID = "180D"
     override func viewDidLoad() {
@@ -46,6 +47,8 @@ class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPer
         //[centralManager scanForPeripheralsWithServices:services options:nil];
         self.centralManager = centralManager;
         // Do any additional setup after loading the view.
+        Timelbl.text = "00.00"
+        HeartRatelbl.text = "00.00"
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -174,52 +177,67 @@ class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPer
                 bpm =  bpm! | UInt16(buffer[2])
             }
         }
-        var bpmTemp:Int
+        
+        let time = Double(Timelbl.text!) ?? 1
+        var acc = 0.0
+        
+        if(time <= 30.0)
+        {
+            acc += time
+        }
+        let calc1 = Int(ceil(acc * 0.87))
+        let calc2 = Int(ceil(acc*0.9))
+        let calc3 = Int(ceil(acc*0.95))
+        let calc4 = Int(ceil(acc*1))
+        let calc5 = Int(ceil(acc*1.05))
+        let calc6 = Int(ceil(acc*1.15))
+        let calc7 = Int(ceil(acc*1.25))
+        let bpmTemp:Int
         bpmTemp = Int(UInt(bpm!))
         var GSRL: String
         switch bpmTemp{
-        case 0...58:
+        case 0...calc1:
             //lbl.text = ("😁: Doing Yoga?")
             Meter.image = UIImage(named: "MeterLow")!
             Face.image = UIImage(named: "f0")!
             GSRL = "Low"
             break
-        case 59...67:
+        case calc1...calc2:
             //lbl.text = ("😄: You're cool")
             Meter.image = UIImage(named: "MeterLowHigh")!
             Face.image = UIImage(named: "f1")!
 
             GSRL = "Low-High"
             break
-        case 68...74:
+        case calc2...calc3:
             //lbl.text = ("😃: Relaxed?")
             Meter.image = UIImage(named: "MeterNormLow")!
             Face.image = UIImage(named: "f2")!
 
             GSRL = "Normal"
             break
-        case 75...77:
+        case calc3...calc4:
             //lbl.text = ("😊: Be Chill")
             Meter.image = UIImage(named: "MeterNorm")!
             Face.image = UIImage(named: "f2")!
 
             GSRL = "Normal"
             break
-        case 78...84:
+        case calc4...calc5:
             //lbl.text = ("🙂: You're Good")
             Meter.image = UIImage(named: "MeterNormHigh")!
             Face.image = UIImage(named: "f3")!
 
             GSRL = "Normal"
             break
-        case 85...89:
+        case calc5...calc6:
             //lbl.text = ("🙁: Breath")
             Meter.image = UIImage(named: "MeterHighLow")!
             Face.image = UIImage(named: "f4")!
 
             GSRL = "High"
             break
-        case let x where x > 90:
+        case let x where x > calc7:
             //lbl.text = ("☹️: Chillout")
             Meter.image = UIImage(named: "MeterHigh")!
             Face.image = UIImage(named: "f5")!
