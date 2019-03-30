@@ -18,6 +18,8 @@ class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPer
     @IBOutlet weak var Meter: UIImageView!
     @IBOutlet weak var Face: UIImageView!
     
+    var timeracc = 0.0
+    var acc = 0.0
     /*
     JWGCircleCounter *circleCounter = [[JWGCircleCounter alloc] initWithFrame:CGRectMake(0,0,40,40)];
     ...
@@ -49,6 +51,7 @@ class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPer
         // Do any additional setup after loading the view.
         Timelbl.text = "00.00"
         HeartRatelbl.text = "00.00"
+        timerA = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(HomeScreenViewController.ActStart), userInfo: nil, repeats: true)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -178,23 +181,24 @@ class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPer
             }
         }
         
-        let time = Double(Timelbl.text!) ?? 1
-        var acc = 0.0
-        
-        if(time <= 30.0)
+        if(timeracc<=30)
         {
-            acc += time
+            acc = acc + Double(bpm!)
         }
-        let calc1 = Int(ceil(acc * 0.87))
-        let calc2 = Int(ceil(acc*0.9))
-        let calc3 = Int(ceil(acc*0.95))
-        let calc4 = Int(ceil(acc*1))
-        let calc5 = Int(ceil(acc*1.05))
-        let calc6 = Int(ceil(acc*1.15))
-        let calc7 = Int(ceil(acc*1.25))
+        let final = acc/30
+        print("accumulator: ", acc)
+        print("time: ", timeracc)
+        let calc1 = Int(ceil(final * 0.87))
+        let calc2 = Int(ceil(final*0.9))
+        let calc3 = Int(ceil(final*0.95))
+        let calc4 = Int(ceil(final*1))
+        let calc5 = Int(ceil(final*1.05))
+        let calc6 = Int(ceil(final*1.15))
+        let calc7 = Int(ceil(final*1.25))
         let bpmTemp:Int
         bpmTemp = Int(UInt(bpm!))
         var GSRL: String
+        if(timeracc>=30){
         switch bpmTemp{
         case 0...calc1:
             //lbl.text = ("😁: Doing Yoga?")
@@ -251,6 +255,7 @@ class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPer
         default:
             GSRL = "N/A"
         }
+        }
         
         if let actualBpm = bpm{
             print(actualBpm)
@@ -297,10 +302,11 @@ class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPer
     // Actual Timer
     var timerA = Timer()
     
+    /*
     @IBAction func startTimer(_ sender: Any) {
         timerA = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(HomeScreenViewController.ActStart), userInfo: nil, repeats: true)
     }
-    
+    */
     
     @IBAction func stopTimer(_ sender: Any) {
         timerA.invalidate()
@@ -319,7 +325,7 @@ class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPer
         TimeS = ActTime % 60 //Seconds
         TimeM = (ActTime / 60) % 60 //Minutes
         TimeH = ActTime / 3600 //Hours
-        
+        timeracc = timeracc + 1
         Timelbl.text = String(format: "%02d",TimeH) + ":" + String(format: "%02d", TimeM) + ":" + String(format: "%02d", TimeS)
     }
     
