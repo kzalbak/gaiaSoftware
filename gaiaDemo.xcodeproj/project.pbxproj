@@ -33,6 +33,9 @@
 		CEBE9EF22240012F0073D1AC /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE9EF12240012F0073D1AC /* SplashScreenViewController.swift */; };
 		CEBE9F0222417D980073D1AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE9F0122417D980073D1AC /* LoginViewController.swift */; };
 		CEBE9F0822417F050073D1AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEBE9F0722417F050073D1AC /* GoogleService-Info.plist */; };
+		D36534E8226A8F8B00B36125 /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36534E6226A8F8B00B36125 /* CountdownTimer.swift */; };
+		D36534E9226A8F8B00B36125 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36534E7226A8F8B00B36125 /* CustomColors.swift */; };
+		D3D4D495224FD63700D5A52E /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D4D494224FD63600D5A52E /* ProgressBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +69,9 @@
 		CEBE9EF12240012F0073D1AC /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		CEBE9F0122417D980073D1AC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CEBE9F0722417F050073D1AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D36534E6226A8F8B00B36125 /* CountdownTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountdownTimer.swift; path = ../../../Documents/GitHub/gaiaDemo/BLE_Demo/CountdownTimer.swift; sourceTree = "<group>"; };
+		D36534E7226A8F8B00B36125 /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomColors.swift; path = ../../../Documents/GitHub/gaiaDemo/BLE_Demo/CustomColors.swift; sourceTree = "<group>"; };
+		D3D4D494224FD63600D5A52E /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +109,9 @@
 		7B4FF40E1DF5912E008E1256 /* BLE_Demo */ = {
 			isa = PBXGroup;
 			children = (
+				D36534E6226A8F8B00B36125 /* CountdownTimer.swift */,
+				D36534E7226A8F8B00B36125 /* CustomColors.swift */,
+				D3D4D494224FD63600D5A52E /* ProgressBar.swift */,
 				7B4FF4371DF68C74008E1256 /* BLE */,
 				7B4FF40F1DF5912E008E1256 /* AppDelegate.swift */,
 				7B4FF4111DF5912E008E1256 /* ViewController.swift */,
@@ -202,6 +211,7 @@
 					7B4FF40B1DF5912E008E1256 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = HVQJMXZU28;
+						LastSwiftMigration = 1010;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -321,6 +331,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE0D4DC82242DFDF000C914A /* HomeScreenViewController.swift in Sources */,
+				D3D4D495224FD63700D5A52E /* ProgressBar.swift in Sources */,
 				CEBE9F0222417D980073D1AC /* LoginViewController.swift in Sources */,
 				7B4FF4421DF68C74008E1256 /* BLEDeviceScan.swift in Sources */,
 				7BFE78231DF838A100B01A2D /* BLEDeviceProperties.swift in Sources */,
@@ -328,11 +339,13 @@
 				CEBE9EF22240012F0073D1AC /* SplashScreenViewController.swift in Sources */,
 				7B4FF4121DF5912E008E1256 /* ViewController.swift in Sources */,
 				7B4FF4331DF68758008E1256 /* ServiceTableViewCell.swift in Sources */,
+				D36534E8226A8F8B00B36125 /* CountdownTimer.swift in Sources */,
 				7B4FF4431DF68C74008E1256 /* BLEManager.swift in Sources */,
 				7B4FF4411DF68C74008E1256 /* BLEDeviceRSSI.swift in Sources */,
 				7B4FF4231DF591DB008E1256 /* DeviceTableViewCell.swift in Sources */,
 				CE0D4DC42242ACF3000C914A /* SignUpViewController.swift in Sources */,
 				7B4FF4261DF595FD008E1256 /* ServiceViewController.swift in Sources */,
+				D36534E9226A8F8B00B36125 /* CustomColors.swift in Sources */,
 				CE0D4DC62242C205000C914A /* SignInViewController.swift in Sources */,
 				7B4FF4101DF5912E008E1256 /* AppDelegate.swift in Sources */,
 				7B4FF43F1DF68C74008E1256 /* BLEDeviceConnection.swift in Sources */,
@@ -464,7 +477,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Brent.Chase.gaiaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -479,7 +492,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Brent.Chase.gaiaDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};

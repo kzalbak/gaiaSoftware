@@ -246,8 +246,8 @@ class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPer
             Meter.image = UIImage(named: "MeterHigh")!
             Face.image = UIImage(named: "f5")!
             AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
-            let alert = UIAlertController(title: "Alert", message: "Chill out!", preferredStyle: UIAlertControllerStyle.alert)
-            alert.addAction(UIAlertAction(title: "Click", style: UIAlertActionStyle.default, handler: nil))
+            let alert = UIAlertController(title: "Alert", message: "Chill out!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
             
             GSRL = "High"
@@ -320,7 +320,7 @@ class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPer
         */
     }
     
-    func ActStart(){
+    @objc func ActStart(){
         ActTime += 1//Actual Time
         TimeS = ActTime % 60 //Seconds
         TimeM = (ActTime / 60) % 60 //Minutes
