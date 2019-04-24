@@ -320,6 +320,15 @@ class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPer
         */
     }
     
+    
+    @IBAction func goGame(_ sender: Any) {
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "gameScreen")
+        self.present(nextViewController, animated:true, completion:nil)
+    }
+    
+    
     @objc func ActStart(){
         ActTime += 1//Actual Time
         TimeS = ActTime % 60 //Seconds

@@ -30,11 +30,16 @@
 		CE0D4DC42242ACF3000C914A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D4DC32242ACF3000C914A /* SignUpViewController.swift */; };
 		CE0D4DC62242C205000C914A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D4DC52242C205000C914A /* SignInViewController.swift */; };
 		CE0D4DC82242DFDF000C914A /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D4DC72242DFDF000C914A /* HomeScreenViewController.swift */; };
+		CE1215E62270B8AB00C9A829 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = CE1215E42270B8AB00C9A829 /* background-music-aac.caf */; };
+		CE1215E72270B8AB00C9A829 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = CE1215E52270B8AB00C9A829 /* pew-pew-lei.caf */; };
+		CE1215E92270B8F000C9A829 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1215E82270B8F000C9A829 /* GameScene.swift */; };
+		CE1215EB2270B92900C9A829 /* GameOverScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1215EA2270B92900C9A829 /* GameOverScene.swift */; };
+		CE1215ED2270B97F00C9A829 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1215EC2270B97F00C9A829 /* GameViewController.swift */; };
+		CEB1832B226AAA4300BCB16E /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1832A226AAA4300BCB16E /* CustomColors.swift */; };
+		CEB1832D226AAA4B00BCB16E /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEB1832C226AAA4B00BCB16E /* CountdownTimer.swift */; };
 		CEBE9EF22240012F0073D1AC /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE9EF12240012F0073D1AC /* SplashScreenViewController.swift */; };
 		CEBE9F0222417D980073D1AC /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBE9F0122417D980073D1AC /* LoginViewController.swift */; };
 		CEBE9F0822417F050073D1AC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CEBE9F0722417F050073D1AC /* GoogleService-Info.plist */; };
-		D36534E8226A8F8B00B36125 /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36534E6226A8F8B00B36125 /* CountdownTimer.swift */; };
-		D36534E9226A8F8B00B36125 /* CustomColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D36534E7226A8F8B00B36125 /* CustomColors.swift */; };
 		D3D4D495224FD63700D5A52E /* ProgressBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D4D494224FD63600D5A52E /* ProgressBar.swift */; };
 /* End PBXBuildFile section */
 
@@ -66,11 +71,16 @@
 		CE0D4DC32242ACF3000C914A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CE0D4DC52242C205000C914A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		CE0D4DC72242DFDF000C914A /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		CE1215E42270B8AB00C9A829 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
+		CE1215E52270B8AB00C9A829 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
+		CE1215E82270B8F000C9A829 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		CE1215EA2270B92900C9A829 /* GameOverScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOverScene.swift; sourceTree = "<group>"; };
+		CE1215EC2270B97F00C9A829 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		CEB1832A226AAA4300BCB16E /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomColors.swift; sourceTree = "<group>"; };
+		CEB1832C226AAA4B00BCB16E /* CountdownTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
 		CEBE9EF12240012F0073D1AC /* SplashScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
 		CEBE9F0122417D980073D1AC /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		CEBE9F0722417F050073D1AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D36534E6226A8F8B00B36125 /* CountdownTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CountdownTimer.swift; path = ../../../Documents/GitHub/gaiaDemo/BLE_Demo/CountdownTimer.swift; sourceTree = "<group>"; };
-		D36534E7226A8F8B00B36125 /* CustomColors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomColors.swift; path = ../../../Documents/GitHub/gaiaDemo/BLE_Demo/CustomColors.swift; sourceTree = "<group>"; };
 		D3D4D494224FD63600D5A52E /* ProgressBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,8 +119,9 @@
 		7B4FF40E1DF5912E008E1256 /* BLE_Demo */ = {
 			isa = PBXGroup;
 			children = (
-				D36534E6226A8F8B00B36125 /* CountdownTimer.swift */,
-				D36534E7226A8F8B00B36125 /* CustomColors.swift */,
+				CE1215E32270B8AB00C9A829 /* NinjaSounds */,
+				CEB1832C226AAA4B00BCB16E /* CountdownTimer.swift */,
+				CEB1832A226AAA4300BCB16E /* CustomColors.swift */,
 				D3D4D494224FD63600D5A52E /* ProgressBar.swift */,
 				7B4FF4371DF68C74008E1256 /* BLE */,
 				7B4FF40F1DF5912E008E1256 /* AppDelegate.swift */,
@@ -131,6 +142,9 @@
 				CE0D4DC32242ACF3000C914A /* SignUpViewController.swift */,
 				CE0D4DC52242C205000C914A /* SignInViewController.swift */,
 				CE0D4DC72242DFDF000C914A /* HomeScreenViewController.swift */,
+				CE1215E82270B8F000C9A829 /* GameScene.swift */,
+				CE1215EA2270B92900C9A829 /* GameOverScene.swift */,
+				CE1215EC2270B97F00C9A829 /* GameViewController.swift */,
 			);
 			path = BLE_Demo;
 			sourceTree = "<group>";
@@ -173,6 +187,15 @@
 				27FAD969F48FF82EECABB7E0 /* Pods-gaiaDemo.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		CE1215E32270B8AB00C9A829 /* NinjaSounds */ = {
+			isa = PBXGroup;
+			children = (
+				CE1215E42270B8AB00C9A829 /* background-music-aac.caf */,
+				CE1215E52270B8AB00C9A829 /* pew-pew-lei.caf */,
+			);
+			path = NinjaSounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +244,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -240,7 +264,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B4FF41A1DF5912E008E1256 /* LaunchScreen.storyboard in Resources */,
+				CE1215E62270B8AB00C9A829 /* background-music-aac.caf in Resources */,
 				CEBE9F0822417F050073D1AC /* GoogleService-Info.plist in Resources */,
+				CE1215E72270B8AB00C9A829 /* pew-pew-lei.caf in Resources */,
 				7B4FF4171DF5912E008E1256 /* Assets.xcassets in Resources */,
 				7B4FF4151DF5912E008E1256 /* Main.storyboard in Resources */,
 				7B4FF4241DF591DB008E1256 /* DeviceTableViewCell.xib in Resources */,
@@ -332,22 +358,25 @@
 			files = (
 				CE0D4DC82242DFDF000C914A /* HomeScreenViewController.swift in Sources */,
 				D3D4D495224FD63700D5A52E /* ProgressBar.swift in Sources */,
+				CE1215EB2270B92900C9A829 /* GameOverScene.swift in Sources */,
 				CEBE9F0222417D980073D1AC /* LoginViewController.swift in Sources */,
 				7B4FF4421DF68C74008E1256 /* BLEDeviceScan.swift in Sources */,
 				7BFE78231DF838A100B01A2D /* BLEDeviceProperties.swift in Sources */,
+				CEB1832D226AAA4B00BCB16E /* CountdownTimer.swift in Sources */,
 				7B4FF4401DF68C74008E1256 /* BLEDeviceDiscoverServices.swift in Sources */,
 				CEBE9EF22240012F0073D1AC /* SplashScreenViewController.swift in Sources */,
 				7B4FF4121DF5912E008E1256 /* ViewController.swift in Sources */,
 				7B4FF4331DF68758008E1256 /* ServiceTableViewCell.swift in Sources */,
-				D36534E8226A8F8B00B36125 /* CountdownTimer.swift in Sources */,
 				7B4FF4431DF68C74008E1256 /* BLEManager.swift in Sources */,
 				7B4FF4411DF68C74008E1256 /* BLEDeviceRSSI.swift in Sources */,
+				CE1215E92270B8F000C9A829 /* GameScene.swift in Sources */,
+				CE1215ED2270B97F00C9A829 /* GameViewController.swift in Sources */,
 				7B4FF4231DF591DB008E1256 /* DeviceTableViewCell.swift in Sources */,
 				CE0D4DC42242ACF3000C914A /* SignUpViewController.swift in Sources */,
 				7B4FF4261DF595FD008E1256 /* ServiceViewController.swift in Sources */,
-				D36534E9226A8F8B00B36125 /* CustomColors.swift in Sources */,
 				CE0D4DC62242C205000C914A /* SignInViewController.swift in Sources */,
 				7B4FF4101DF5912E008E1256 /* AppDelegate.swift in Sources */,
+				CEB1832B226AAA4300BCB16E /* CustomColors.swift in Sources */,
 				7B4FF43F1DF68C74008E1256 /* BLEDeviceConnection.swift in Sources */,
 				7B4FF4281DF5961A008E1256 /* CharacteristicsViewController.swift in Sources */,
 			);
