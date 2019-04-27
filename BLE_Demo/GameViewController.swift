@@ -24,7 +24,21 @@ class GameViewController: UIViewController {
     override var prefersStatusBarHidden: Bool {
         return true
     }
+
+
+
+    @IBAction func goHomePage(_ sender: Any) {
+        
+        let storyBoard : UIStoryboard = UIStoryboard(name: "Main", bundle:nil)
+        
+        let nextViewController = storyBoard.instantiateViewController(withIdentifier: "homeScreen")
+        self.present(nextViewController, animated:true, completion:nil)
+    }
+    
+
+
 }
+
 
     
 
