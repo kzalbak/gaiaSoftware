@@ -180,6 +180,7 @@ class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPer
                 bpm =  bpm! | UInt16(buffer[2])
             }
         }
+        /*
         
         if(timeracc<=30)
         {
@@ -195,6 +196,15 @@ class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPer
         let calc5 = Int(ceil(final*1.05))
         let calc6 = Int(ceil(final*1.15))
         let calc7 = Int(ceil(final*1.25))
+         */
+        let heartR = Double(bpm!)
+        let calc1 = Int(ceil(heartR * 0.87))
+        let calc2 = Int(ceil(heartR * 0.9))
+        let calc3 = Int(ceil(heartR * 0.95))
+        let calc4 = Int(ceil(heartR * 1))
+        let calc5 = Int(ceil(heartR * 1.05))
+        let calc6 = Int(ceil(heartR * 1.15))
+        let calc7 = Int(ceil(heartR * 1.25))
         let bpmTemp:Int
         bpmTemp = Int(UInt(bpm!))
         var GSRL: String
