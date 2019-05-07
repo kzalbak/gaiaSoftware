@@ -208,7 +208,7 @@ class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPer
         let bpmTemp:Int
         bpmTemp = Int(UInt(bpm!))
         var GSRL: String
-        if(timeracc>=30){
+        //if(timeracc>=30){
         switch bpmTemp{
         case 0...calc1:
             //lbl.text = ("😁: Doing Yoga?")
@@ -264,7 +264,7 @@ class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPer
             break
         default:
             GSRL = "N/A"
-        }
+        //}
         }
         
         if let actualBpm = bpm{
