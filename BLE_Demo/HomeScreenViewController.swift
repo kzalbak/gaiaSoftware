@@ -180,9 +180,8 @@ class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPer
                 bpm =  bpm! | UInt16(buffer[2])
             }
         }
-        /*
         
-        if(timeracc<=30)
+        if(timeracc<=3)
         {
             acc = acc + Double(bpm!)
         }
@@ -196,15 +195,6 @@ class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPer
         let calc5 = Int(ceil(final*1.05))
         let calc6 = Int(ceil(final*1.15))
         let calc7 = Int(ceil(final*1.25))
-         */
-        let heartR = Double(bpm!)
-        let calc1 = Int(ceil(heartR * 0.87))
-        let calc2 = Int(ceil(heartR * 0.9))
-        let calc3 = Int(ceil(heartR * 0.95))
-        let calc4 = Int(ceil(heartR * 1))
-        let calc5 = Int(ceil(heartR * 1.05))
-        let calc6 = Int(ceil(heartR * 1.15))
-        let calc7 = Int(ceil(heartR * 1.25))
         let bpmTemp:Int
         bpmTemp = Int(UInt(bpm!))
         var GSRL: String
@@ -255,11 +245,16 @@ class HomeScreenViewController: UIViewController, CBCentralManagerDelegate,CBPer
             //lbl.text = ("☹️: Chillout")
             Meter.image = UIImage(named: "MeterHigh")!
             Face.image = UIImage(named: "f5")!
+            
+            performSegue(withIdentifier: "goBreath", sender: self)
+            
+            /*
             AudioServicesPlayAlertSound(SystemSoundID(kSystemSoundID_Vibrate))
             let alert = UIAlertController(title: "Alert", message: "Chill out!", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "Click", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
-            
+            */
+ 
             GSRL = "High"
             break
         default:

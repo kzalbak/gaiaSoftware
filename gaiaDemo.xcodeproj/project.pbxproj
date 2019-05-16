@@ -30,6 +30,9 @@
 		CE0D4DC42242ACF3000C914A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D4DC32242ACF3000C914A /* SignUpViewController.swift */; };
 		CE0D4DC62242C205000C914A /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D4DC52242C205000C914A /* SignInViewController.swift */; };
 		CE0D4DC82242DFDF000C914A /* HomeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE0D4DC72242DFDF000C914A /* HomeScreenViewController.swift */; };
+		CE11E7B2228DBCC90026446E /* BreathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE11E7B1228DBCC90026446E /* BreathViewController.swift */; };
+		CE11E7B4228DBDFE0026446E /* BreathAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE11E7B3228DBDFE0026446E /* BreathAnimator.swift */; };
+		CE11E7B6228DBE420026446E /* BreathLayerGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE11E7B5228DBE420026446E /* BreathLayerGenerator.swift */; };
 		CE1215E62270B8AB00C9A829 /* background-music-aac.caf in Resources */ = {isa = PBXBuildFile; fileRef = CE1215E42270B8AB00C9A829 /* background-music-aac.caf */; };
 		CE1215E72270B8AB00C9A829 /* pew-pew-lei.caf in Resources */ = {isa = PBXBuildFile; fileRef = CE1215E52270B8AB00C9A829 /* pew-pew-lei.caf */; };
 		CE1215E92270B8F000C9A829 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE1215E82270B8F000C9A829 /* GameScene.swift */; };
@@ -71,6 +74,9 @@
 		CE0D4DC32242ACF3000C914A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		CE0D4DC52242C205000C914A /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		CE0D4DC72242DFDF000C914A /* HomeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewController.swift; sourceTree = "<group>"; };
+		CE11E7B1228DBCC90026446E /* BreathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewController.swift; sourceTree = "<group>"; };
+		CE11E7B3228DBDFE0026446E /* BreathAnimator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathAnimator.swift; sourceTree = "<group>"; };
+		CE11E7B5228DBE420026446E /* BreathLayerGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathLayerGenerator.swift; sourceTree = "<group>"; };
 		CE1215E42270B8AB00C9A829 /* background-music-aac.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "background-music-aac.caf"; sourceTree = "<group>"; };
 		CE1215E52270B8AB00C9A829 /* pew-pew-lei.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "pew-pew-lei.caf"; sourceTree = "<group>"; };
 		CE1215E82270B8F000C9A829 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
@@ -145,6 +151,9 @@
 				CE1215E82270B8F000C9A829 /* GameScene.swift */,
 				CE1215EA2270B92900C9A829 /* GameOverScene.swift */,
 				CE1215EC2270B97F00C9A829 /* GameViewController.swift */,
+				CE11E7B1228DBCC90026446E /* BreathViewController.swift */,
+				CE11E7B3228DBDFE0026446E /* BreathAnimator.swift */,
+				CE11E7B5228DBE420026446E /* BreathLayerGenerator.swift */,
 			);
 			path = BLE_Demo;
 			sourceTree = "<group>";
@@ -358,12 +367,15 @@
 			files = (
 				CE0D4DC82242DFDF000C914A /* HomeScreenViewController.swift in Sources */,
 				D3D4D495224FD63700D5A52E /* ProgressBar.swift in Sources */,
+				CE11E7B2228DBCC90026446E /* BreathViewController.swift in Sources */,
+				CE11E7B6228DBE420026446E /* BreathLayerGenerator.swift in Sources */,
 				CE1215EB2270B92900C9A829 /* GameOverScene.swift in Sources */,
 				CEBE9F0222417D980073D1AC /* LoginViewController.swift in Sources */,
 				7B4FF4421DF68C74008E1256 /* BLEDeviceScan.swift in Sources */,
 				7BFE78231DF838A100B01A2D /* BLEDeviceProperties.swift in Sources */,
 				CEB1832D226AAA4B00BCB16E /* CountdownTimer.swift in Sources */,
 				7B4FF4401DF68C74008E1256 /* BLEDeviceDiscoverServices.swift in Sources */,
+				CE11E7B4228DBDFE0026446E /* BreathAnimator.swift in Sources */,
 				CEBE9EF22240012F0073D1AC /* SplashScreenViewController.swift in Sources */,
 				7B4FF4121DF5912E008E1256 /* ViewController.swift in Sources */,
 				7B4FF4331DF68758008E1256 /* ServiceTableViewCell.swift in Sources */,
